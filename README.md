@@ -42,3 +42,7 @@ Backlog:
 * HRM simulator class (device advertises as central with HRM service)
 
 Draws heavily from Apple's HeartRateMonitor example code.
+
+### Tested Devices
+
+* Jarv RunBT
