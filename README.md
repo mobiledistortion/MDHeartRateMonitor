@@ -30,11 +30,15 @@ Writen in Swift, works in Swift and Objective-C, on iOS and OS X.
     }
 
 ### Project Status
-In active development. Feedback and contributions welcomed, particularly regarding API design, Swift best practices, and BLE development.
+In active development, builds with Xcode6-Beta4. Works, but not production-hardened.
 
-TODOs:
+Feedback and contributions welcomed, particularly regarding API design, Swift best practices, and BLE development.
+
+Backlog:
 
 * Mac OS X example project
 * Unit Tests
+* Test against more devices
+* HRM simulator class (device advertises as central with HRM service)
 
 Draws heavily from Apple's HeartRateMonitor example code.
