@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G7x-JL-d2F">
+                                <rect key="frame" x="0.0" y="240" width="600" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eUO-nm-ocN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hrk-qD-xLh"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Not Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJa-1h-T6W">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SJa-1h-T6W" secondAttribute="trailing" id="7kj-8K-lgz"/>
+                            <constraint firstItem="G7x-JL-d2F" firstAttribute="height" secondItem="SJa-1h-T6W" secondAttribute="height" id="MRB-w8-err"/>
+                            <constraint firstItem="SJa-1h-T6W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PqX-DB-t7W"/>
+                            <constraint firstItem="G7x-JL-d2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RAa-mY-eiW"/>
+                            <constraint firstItem="SJa-1h-T6W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="SWh-yU-qSS"/>
+                            <constraint firstAttribute="trailing" secondItem="G7x-JL-d2F" secondAttribute="trailing" id="Sw9-sT-bzq"/>
+                            <constraint firstItem="G7x-JL-d2F" firstAttribute="top" secondItem="SJa-1h-T6W" secondAttribute="bottom" id="XYz-xX-8V3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G7x-JL-d2F" secondAttribute="bottom" id="ki8-To-uKP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelHeartRate" destination="SJa-1h-T6W" id="UvK-gO-7AA"/>
+                        <outlet property="tableDevices" destination="G7x-JL-d2F" id="K0y-Hq-f9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
